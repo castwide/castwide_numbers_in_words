@@ -1,14 +1,14 @@
-[![Build Status](http://img.shields.io/travis/markburns/numbers_in_words.svg?branch=master)](https://travis-ci.org/markburns/numbers_in_words)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a51210488896b798af20/maintainability)](https://codeclimate.com/github/markburns/numbers_in_words/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a51210488896b798af20/test_coverage)](https://codeclimate.com/github/markburns/numbers_in_words/test_coverage)
-[![Gem Version](http://img.shields.io/gem/v/numbers_in_words.svg)](https://rubygems.org/gems/numbers_in_words)
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://markburns.mit-license.org)
+**This is a fork of the [numbers_in_words gem by Mark Burns](https://github.com/markburns/numbers_in_words).** The original license is reproduced in [NUMBERS_IN_WORDS.txt](NUMBERS_IN_WORDS.txt).
+
+Changes in this fork:
+* Compatibility with [Opal](https://github.com/opal/opal)
+* Updates for Ruby 3
 
 Installation
 ============
 
 ```ruby
-gem 'numbers_in_words'
+gem 'castwide_numbers_in_words'
 ```
 
 Usage

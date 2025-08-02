@@ -129,7 +129,7 @@ RSpec.describe NumbersInWords::Fraction do # rubocop: disable Metrics/BlockLengt
   end
 
   context 'googolplexths' do
-    let(:denominator) { Kernel.silence_warnings { 10**(10**100) } }
+    let(:denominator) { Float::INFINITY }
 
     let(:attributes) do
       { number: 'googolplex',

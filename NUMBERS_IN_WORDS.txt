@@ -1,6 +1,4 @@
-Adapted from numbers_in_words by Mark Burns (see NUMBERS_IN_WORDS.txt)
-
-Copyright (c) 2025 by Fred Snyder
+Copyright (c) 2013 Mark Burns
 
 MIT License
 
