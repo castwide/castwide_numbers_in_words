@@ -9,12 +9,9 @@ module NumbersInWords
     end
 
     def strip_punctuation(text)
-      text = text.downcase.gsub(/[^a-z 0-9]/, ' ')
-      to_remove = true
-
-      to_remove = text.gsub! '  ', ' ' while to_remove
-
-      text
+      text.downcase
+          .gsub(/[^a-z 0-9]/, ' ')
+          .gsub(/ +/, ' ')
     end
 
     def possible_fraction?(text)

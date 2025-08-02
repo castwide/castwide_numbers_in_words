@@ -36,7 +36,7 @@ module NumbersInWords
     end
 
     def split_decimals
-      return unless @number.is_a? Float
+      return unless @number.to_s.include?('.')
 
       int, decimal = @number.to_s.split '.'
 

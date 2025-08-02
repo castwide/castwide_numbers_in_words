@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative './special'
-require_relative './fraction_parsing'
+require_relative 'special'
+require_relative 'fraction_parsing'
 
 module NumbersInWords
   class ToNumber

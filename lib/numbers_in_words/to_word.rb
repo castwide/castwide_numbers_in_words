@@ -43,7 +43,7 @@ module NumbersInWords
 
       out = NumbersInWords.in_words(int) + ' point '
       decimals.each do |decimal|
-        out << NumbersInWords.in_words(decimal.to_i) + ' '
+        out = out + NumbersInWords.in_words(decimal.to_i) + ' '
       end
       out.strip
     end
@@ -63,13 +63,13 @@ module NumbersInWords
 
       tens = (number / 10).round * 10 # write the tens
 
-      output += NumbersInWords.lookup(tens) # e.g. eighty
+      output += NumbersInWords.lookup(tens).to_s # e.g. eighty
 
       digit = number - tens # write the digits
 
       unless digit.zero?
         join = number < 100 ? '-' : ' '
-        output << join + NumbersInWords.in_words(digit)
+        output = output + join + NumbersInWords.in_words(digit)
       end
 
       output
